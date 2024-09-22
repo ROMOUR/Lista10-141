@@ -20,6 +20,7 @@ describe('Simulação de compra de passagem no BlazeDemo', () => {
     
     cy.url().should('include', '/reserve.php')
     cy.get('input[type="submit"]').first().click()
+    cy.contains('Your flight from TLV to SFO has been reserved.', { timeout: 10000 }).should('be.visible')
 
     cy.url().should('include', '/purchase.php')
     cy.get('input#inputName').type('John Doe')
@@ -37,6 +38,7 @@ describe('Simulação de compra de passagem no BlazeDemo', () => {
     cy.url().should('include', '/confirmation.php')
     cy.contains('Thank you for your purchase today!', { timeout: 10000 }).should('be.visible')
     cy.get('table').within(() => {
+    
     })
   });
 });
