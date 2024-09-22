@@ -1,0 +1,15 @@
+{
+  "cliente": {
+    "nome": "John Doe",
+    "endereco": "123 Main Street",
+    "cidade": "New York",
+    "estado": "NY",
+    "cep": "10001"
+  },
+  "cartao": {
+    "numero": "1234567890123456",
+    "mes": "12",
+    "ano": "2024",
+    "nome": "John Doe"
+  }
+}
